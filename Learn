@@ -1,0 +1,30 @@
+name="Abdullah Durrani"
+age=35
+profession="coder/programmer"
+print(name, profession)
+#I am attempting to practice python.
+notes="variable declation statement"
+#excericse from online course.
+#Storing the flight number
+flight_n = "BA0117"
+
+#Storing the flight information
+destination = "New York"
+distance = 1500
+
+print(flight_n)
+print(destination)
+print(distance)
+
+#excercise
+p1 = "  *  "
+p2 = " *** "
+p3 = "*****"
+
+print(p1)
+print(p2)
+print(p3)
+print(p2)
+print(p1)
+
+#dispaying - print, declaring - giving a value ( I think), .eg "name= 'Abdullah'""
