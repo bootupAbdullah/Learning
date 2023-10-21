@@ -1,0 +1,149 @@
+    1  ls
+    2  pwd
+    3  code .
+    4  mv --help
+    5  pwd
+    6  cd ..
+    7  ls
+    8  mv Abdul/ Abdullah/
+    9  ls
+   10  pwd
+   11  ls /
+   12  ls /cmd
+   13  cat /cmd/start-ssh-agent.cmd 
+   14  ls /
+   15  pwd
+   16  cd ..
+   17  cd ..
+   18  ls
+   19  pwd
+   20  ls
+   21  ls
+   22  ls Documents/
+   23  cd Documents/
+   24  ls Documents
+   25  ls
+   26  ls ../
+   27  ls ../OneDrive/
+   28  ls
+   29  ls ../Desktop
+   30  ls ../Desktop/
+   31  ls ../OneDrive/Desktop
+   32  mkdir --help
+   33  mkdir Programming
+   34  ls
+   35  ls .
+   36  ls ./
+   37  ls ./Programming/
+   38  ls /c/Users/Abdul/Documents
+   39  cd /C/Users/Abdul
+   40  cd documents
+   41  ls
+   42  ls ../OneDrive/desktop
+   43  mv --help
+   44  mv ../OneDrive/desktop/html
+   45  ls /c/Users/Abdul/OneDrive/desktop
+   46  ls /c/Users/Abdul/OneDrive/desktop/html
+   47   mv ../OneDrive/desktop/html Programming/
+   48   mv ../OneDrive/desktop/html/ Programming/
+   49  mv ../OneDrive/Desktop/html Programming/
+   50  mv ../OneDrive/Desktop/HTML/CSS\ Grid/ Programming/
+   51  mv ../OneDrive/Desktop/HTML/Thor.jfif Programming/
+   52  mv ../OneDrive/Desktop/HTML/CSS\ Lessons/ Programming/
+   53  mv ../OneDrive/Desktop/HTML/Faith\ in\ Panels/ Programming/
+   54  ls ../OneDrive/desktop/HTML
+   55  mv ../OneDrive/Desktop/HTML/Picaso\ Method/ Programming/
+   56  mv ../OneDrive/Desktop/HTML Programming/
+   57  ls --help
+   58  ls -l
+   59  ls
+   60  ls -l
+   61  mv Programming/Faith\ in\ Panels/ Programming/html
+   62  mv Programming/CSS\ Grid/ Programming/html
+   63  mv Programming/CSS\ Lessons/ Programming/html
+   64  mv Programming/Picaso\ Method/ Programming/html
+   65  mv Programming/Web\ Design/ Programming/html
+   66  mv Programming/Thor.jfif Programming/html
+   67  mv Programming/HTML/Web\ Design/ Programming/html
+   68  mv Programming/HTML/Web\ Design/ Programming
+   69  code programming
+   70  open
+   71  help
+   72  ls
+   73  pwd
+   74  ls usr
+   75  ls c
+   76  ls users
+   77  ls users/
+   78  ls / c /users
+   79  ls c/users
+   80  ls c/users/abdul
+   81  ls c/users/abdul/documents
+   82  cd c/users/abdul/documents/programming
+   83  ls
+   84  ls c/users/abdul
+   85  ls c/users/abdul/
+   86  ls c/users/abdul/
+   87  ls /c/users/abdul
+   88  ls /c/users/abdul/onedrive
+   89  ls /c/users/abdul/onedrive/desktop
+   90  pwd
+   91  ls
+   92  mkdir Python
+   93  ls
+   94  cd c/users/abdul/documents/programming/python
+   95  cd /c/users/abdul/documents/programming/python
+   96  cd ..
+   97  cd .
+   98  cd ./Python/
+   99  cd ..
+  100  ls
+  101  cd .Python
+  102  cd ./Python
+  103  git clone https://github.com/bootupAbdullah/python.git
+  104  git clone 
+  105  git credential manager
+  106  git clone https://github.com/bootupAbdullah/python.git
+  107  ls
+  108  cd./python
+  109  ls
+  110  cd /python
+  111  cd. /python
+  112  cd. python
+  113  cd .python
+  114  cd ./python
+  115  cd ..
+  116  ls
+  117  cd ./python
+  118  ls
+  119  code ./
+  120  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  121  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  122  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  123  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  124  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  125  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  126  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  127  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  128  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  129  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  130  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  131  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  132  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  133  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  134  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  135  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  136  C:/Users/Abdul/AppData/Local/Programs/Python/Python310/python.exe "c:/users/abdul/documents/programming/Python/python/Code Challenges/Article 1/Control Flow.py"
+  137  git status
+  138  git checkout -b Article1
+  139  git status
+  140  git add Code\ Challenges/
+  141  git status
+  142  git commit -m "added Artcile 1 challenged from CodeCademy"
+  143  git config --global user.email "abdullahkd31@gmail.com"
+  144  git confic --global user.name "Abdullah"
+  145  git config --global user.name "Abdullah"
+  146  git commit -m "added Artcile 1 challenged from CodeCademy"
+  147  git status
+  148  git push origin Article1
+  149  history > studysession.txt
