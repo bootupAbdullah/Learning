@@ -61,12 +61,12 @@ add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 
 
 # 38. - 40.
-def find_attractions(destination, interests):
-    destination_index = get_destination_index(destination)
-    attractions_in_city = attractions[destination_index]
-    return attractions_in_city
-
-print("just 'attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
+# def find_attractions(destination, interests):
+#     destination_index = get_destination_index(destination)
+#     attractions_in_city = attractions[destination_index]
+#     return attractions_in_city
+#
+# print("just 'attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
 
 
 def find_attractions(destination, interests):
@@ -75,30 +75,18 @@ def find_attractions(destination, interests):
     attractions_with_interest = []
     for items in attractions_in_city:
      possible_attractions = items
-    return possible_attractions
+     attractions_tags = items[1]
+     for interest in interests:
+            if interest in attractions_tags:
+              attractions_with_interest.append(possible_attractions)
+              return attractions_with_interest
+
+la_arts = find_attractions("Los Angeles, USA", ['art'])
+
+print(la_arts)
 
 
-print("possible attractions variable : " +str(find_attractions("Paris, France", "Ice Skating")))
 
-
-
-# def find_attractions(destination, interests):
-#     destination_index = get_destination_index(destination)
-#     attractions_in_city = attractions[destination_index]
-#     attractions_with_interest = []
-#      for items in attractions_in_city:
-#         possible_attractions = items
-#         for items[1] in attractions_in_city:
-#             attraction_tags = items[1]
-#             return possible_attractions, attraction_tags
-#     return attractions_in_city
-#
-#
-# print("find attractions function: " +str(find_attractions("Paris, France", "Ice Skating")))
-
-'''I think you need a range function here - 
-I think that's what will keep the loop going or 
-this is what is going to give you the iteration you want.'''
 
 
 
