@@ -59,14 +59,15 @@ add_attraction("São Paulo, Brazil", ["Pátio do Colégio", ["historical site"]]
 add_attraction("Cairo, Egypt", ["Pyramids of Giza", ["monument", "historical site"]])
 add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 
+print(attractions[2])
 
-# 38. - 40.
-# def find_attractions(destination, interests):
-#     destination_index = get_destination_index(destination)
-#     attractions_in_city = attractions[destination_index]
-#     return attractions_in_city
-#
-# print("just 'attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
+38. - 40.
+def find_attractions(destination, interests):
+    destination_index = get_destination_index(destination)
+    attractions_in_city = attractions[destination_index]
+    return attractions_in_city
+
+print("attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
 
 
 def find_attractions(destination, interests):
@@ -85,7 +86,9 @@ la_arts = find_attractions("Los Angeles, USA", ['art'])
 
 print(la_arts)
 
-
+print()
+print()
+#Debugging method as prescribed by Chat-GPT:
 
 
 
