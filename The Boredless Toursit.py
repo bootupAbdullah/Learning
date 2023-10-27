@@ -92,13 +92,16 @@ def get_attractions_for_traveler(traveler):
   traveler_destination = traveler[1]
   traveler_interests = traveler[2]
   traveler_attractions = find_attractions(traveler_destination, traveler_interests)
-  interests_string = "Hi " + str(traveler[0]) + " , we think you'll like these places around "
-  for attractions in traveler_attractions:
-    locations = attractions
+  return traveler_attractions
+  # interests_string = "Hi " + str(traveler[0]) + " , we think you'll like these places around "
+  # for attraction in traveler_attractions:
 
 
+# smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument'])
+#
+# print(smills_france)
 
-
+print(get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']]))
 
 
 
