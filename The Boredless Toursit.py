@@ -59,14 +59,15 @@ add_attraction("São Paulo, Brazil", ["Pátio do Colégio", ["historical site"]]
 add_attraction("Cairo, Egypt", ["Pyramids of Giza", ["monument", "historical site"]])
 add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 
+print(attractions[2])
 
-# 38. - 40.
+38. - 40.
 def find_attractions(destination, interests):
     destination_index = get_destination_index(destination)
     attractions_in_city = attractions[destination_index]
     return attractions_in_city
 
-print("just 'attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
+print("attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
 
 
 def find_attractions(destination, interests):
@@ -75,30 +76,26 @@ def find_attractions(destination, interests):
     attractions_with_interest = []
     for items in attractions_in_city:
      possible_attractions = items
-    return possible_attractions
+     attractions_tags = items[1]
+     for interest in interests:
+            if interest in attractions_tags:
+              attractions_with_interest.append(possible_attractions[0])
+              return attractions_with_interest
 
+la_arts = find_attractions("Los Angeles, USA", ['art'])
 
-print("possible attractions variable : " +str(find_attractions("Paris, France", "Ice Skating")))
+print(la_arts)
 
+# It works! 10-26-23, :)
 
+def get_attractions_for_traveler(traveler):
+  traveler_destination = traveler[1]
+  traveler_interests = traveler[2]
+  traveler_attractions = find_attractions(traveler_destination, traveler_interests)
+  interests_string = "Hi " + str(traveler[0]) + " , we think you'll like these places around "
+  for attractions in traveler_attractions:
+    locations = attractions
 
-# def find_attractions(destination, interests):
-#     destination_index = get_destination_index(destination)
-#     attractions_in_city = attractions[destination_index]
-#     attractions_with_interest = []
-#      for items in attractions_in_city:
-#         possible_attractions = items
-#         for items[1] in attractions_in_city:
-#             attraction_tags = items[1]
-#             return possible_attractions, attraction_tags
-#     return attractions_in_city
-#
-#
-# print("find attractions function: " +str(find_attractions("Paris, France", "Ice Skating")))
-
-'''I think you need a range function here - 
-I think that's what will keep the loop going or 
-this is what is going to give you the iteration you want.'''
 
 
 
