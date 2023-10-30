@@ -62,12 +62,13 @@ add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 print(attractions[2])
 
 38. - 40.
+#Test function:
 def find_attractions(destination, interests):
     destination_index = get_destination_index(destination)
     attractions_in_city = attractions[destination_index]
     return attractions_in_city
 
-print("attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
+print("test: attractions_in_city' variable: " + str(find_attractions("Paris, France", "Ice Skating")))
 
 
 def find_attractions(destination, interests):
@@ -80,10 +81,6 @@ def find_attractions(destination, interests):
      for interest in interests:
             if interest in attractions_tags:
               attractions_with_interest.append(possible_attractions[0])
-              return attractions_with_interest
-
-
-
     return attractions_with_interest
 
 la_arts = find_attractions("Los Angeles, USA", ['art'])
@@ -96,19 +93,23 @@ def get_attractions_for_traveler(traveler):
     traveler_destination = traveler[1]
     traveler_interests = traveler[2]
     traveler_attractions = find_attractions(traveler_destination, traveler_interests)
-    interests_string = "Hi " + str(traveler[0]) + " , we think you'll like these places around  "
-    for attraction in traveler_attractions:
-        interest_string += attraction
-        return interest_string
+    return traveler_attractions
+
+print("test: traveler attractions: " + str(get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']])))
 
 
-smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', 'monument'])
+
+def get_attractions_for_traveler(traveler):
+    traveler_destination = traveler[1]
+    traveler_interests = traveler[2]
+    traveler_attractions = find_attractions(traveler_destination, traveler_interests)
+    interests_string = "Hi " + str(traveler[0]) + ", we think you'll like these places around " +str(traveler_destination) + ":"
+    for items in traveler_attractions:
+        interests_string += " " + str(items)
+    return interests_string
+
+
+smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']])
 
 print(smills_france)
-
-
-
-
-
-
 
