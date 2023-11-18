@@ -1,1 +1,1 @@
-# Python 1 Excercises from Codecademy
+Categorization of folders for learning programming.
