@@ -186,11 +186,15 @@ and a good miss. '''
 
 
 
+#      !! ----- Excercise 6 ----- !!
 
+lines_by_lines = ('''I had a good day today.
+I am hungry.
+I think I'll go and get some  food today.''')
 
+new_lines = lines_by_lines.split('\n')
 
-
-
+print(new_lines)
 
 
 
