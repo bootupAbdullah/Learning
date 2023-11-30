@@ -39,12 +39,17 @@ dates = []
 print()
 print("Highlighted_Poems_Details: " + str(highlighted_poems_details))
 
+titles = [items[0] for items in highlighted_poems_details]
+poets = [items[1] for items in highlighted_poems_details]
+dates = [items[2] for items in highlighted_poems_details]
 
-for items in highlighted_poems_details:
-  items[0] = titles
-  items[1] = poets
-  items[2] = dates
+print()
+print("Titles Only:" + str(titles))
 
-find_item = highlighted_poem
+# Finally, write a for loop that uses .format() to print out the following string for each poem:
+#The poem TITLE was published by POET in DATE.
+
+
+
 
 
