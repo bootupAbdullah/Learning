@@ -198,4 +198,20 @@ print("LIST OF TYPE OF THREAD SOLD:")
 print(thread_sold)
 
 
+#13.
+total_sales = 0
+
+#14.
+
+sales_stripped = []
+
+for items in sales:
+  sales_stripped.append(items.strip("$"))
+for items in sales_stripped:
+    total_sales += float(items)
+
+
+print(total_sales)
+
+
 
