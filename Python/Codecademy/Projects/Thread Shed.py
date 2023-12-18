@@ -173,19 +173,11 @@ for i in range(0, len(transactions_clean), 4):
 # ---- I reached a point where I needed assistance, so I involved Malik in the troubleshooting process. After explaining the code and the project's progress, Malik proposed using the Ctrl+F find function in the editor, instead of relying on the .find string method in Python. This approach led to the discovery that the element 'Tanya Co' — which was the ending point of the the 'for loop' in yeilding expected values ("names") — was originally 'Tanya Cox'. The initial use of .split(x) had split the string at 'x', inadvertently creating an unaccounted-for empty string in the process.
 
 
-<<<<<<< HEAD
 # 11b.
 for i in range(1, len(transactions_clean), 4):
     sales.append(transactions_clean[i])
 
 # 11c.
-=======
-# 11b
-for i in range(1, len(transactions_clean), 4):
-    sales.append(transactions_clean[i])
-
-# 11c
->>>>>>> 1655368a7206fe4dc1564b650e9c543410d3a4b7
 for i in range(2, len(transactions_clean), 4):
     thread_sold.append(transactions_clean[i])
 
@@ -200,7 +192,6 @@ print()
 print("LIST OF SALES AMOUNT:")
 print(sales)
 
-<<<<<<< HEAD
 # print()
 # print()
 # print("LIST OF TYPE OF THREAD SOLD:")
@@ -210,23 +201,10 @@ print(sales)
 total_sales = 0
 
 # 14.
-=======
-print()
-print()
-print("LIST OF TYPE OF THREAD SOLD:")
-print(thread_sold)
-
-
-#13.
-total_sales = 0
-
-#14.
->>>>>>> 1655368a7206fe4dc1564b650e9c543410d3a4b7
 
 sales_stripped = []
 
 for items in sales:
-<<<<<<< HEAD
     sales_stripped.append(items.strip("$"))
 for items in sales_stripped:
     total_sales += float(items)
@@ -261,4 +239,15 @@ print("Thread Sold Split:")
 print(thread_sold_split)
 
 
+def color_count(color):
+    count = 0
+    for thread in thread_sold_split:
+        if color == thread:
+            count += 1
+    return count
 
+
+print()
+print()
+print("Color Count Test, White:")
+print(color_count('white'))
