@@ -186,6 +186,95 @@ print()
 print()
 print(transactions_clean)
 
+# 10.
+customers = []
+sales = []
+thread_sold = []
+
+# 11.
+for i in range(0, len(transactions_clean), 4):
+    customers.append(transactions_clean[i])
+
+# The previous iteration of the code (line 157) yielded unexpected outcomes in the 'for loop'. Instead of isolating only 'names', it also included 'amount' and 'thread_sold' data. The root of the issue was traced back to the use of 'x' as a replacement for the ';,;' sequence. This approach inadvertently affected the data integrity, as some 'names' contained the letter 'x', disrupting the intended pattern of selecting every fourth element. During the string processing, the .split(x) method inadvertently generated empty strings, leading to a miscount. This prompted the following debugging process
+
+# searching for string, with string.find(substring)
+
+# - -- - First Attempt, not going to work, list of strings, not string - -- -- #
+# customer_index = transactions_clean.find("Tanya Co")
+# print(customer_index)
+
+# - -- - Second Attempt - -- -#
+# customer_index = -1
+# for i, transaction in enumerate(transactions_clean):
+#   if "Tanya Co" in transaction
+
+# ---- I reached a point where I needed assistance, so I involved Malik in the troubleshooting process. After explaining the code and the project's progress, Malik proposed using the Ctrl+F find function in the editor, instead of relying on the .find string method in Python. This approach led to the discovery that the element 'Tanya Co' — which was the ending point of the the 'for loop' in yeilding expected values ("names") — was originally 'Tanya Cox'. The initial use of .split(x) had split the string at 'x', inadvertently creating an unaccounted-for empty string in the process.
+
+
+# 11b.
+for i in range(1, len(transactions_clean), 4):
+    sales.append(transactions_clean[i])
+
+# 11c.
+for i in range(2, len(transactions_clean), 4):
+    thread_sold.append(transactions_clean[i])
+
+print()
+print()
+print("LIST OF CUSTOMERS:")
+print()
+print(customers)
+
+print()
+print()
+print("LIST OF SALES AMOUNT:")
+print(sales)
+
+# print()
+# print()
+# print("LIST OF TYPE OF THREAD SOLD:")
+# print(thread_sold)
+
+# 13.
+total_sales = 0
+
+# 14.
+
+sales_stripped = []
+
+for items in sales:
+    sales_stripped.append(items.strip("$"))
+for items in sales_stripped:
+    total_sales += float(items)
+
+# 15.
+print()
+print()
+print("TOTAL SALES:")
+print(total_sales)
+
+# 16.
+print()
+print()
+print("LIST OF TYPE OF THREAD SOLD:")
+print(thread_sold)  # located on line 154
+
+# 17.
+thread_sold_split = []
+
+for thread in thread_sold:
+    if "&" not in thread:
+        thread_sold_split.append(thread)
+    else:
+        if "&" in thread:
+            split_thread = thread.split("&")
+            for colors in split_thread:
+                thread_sold_split.append(colors)
+
+print()
+print()
+print("Thread Sold Split:")
+print(thread_sold_split)
 
 
 
