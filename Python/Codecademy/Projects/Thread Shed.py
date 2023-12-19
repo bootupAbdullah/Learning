@@ -224,6 +224,7 @@ print(thread_sold)  # located on line 154
 # 17.
 thread_sold_split = []
 
+# 18.
 for thread in thread_sold:
     if "&" not in thread:
         thread_sold_split.append(thread)
@@ -239,6 +240,7 @@ print("Thread Sold Split:")
 print(thread_sold_split)
 
 
+# 19.
 def color_count(color):
     count = 0
     for thread in thread_sold_split:
@@ -247,7 +249,23 @@ def color_count(color):
     return count
 
 
+# 20.
 print()
 print()
-print("Color Count Test, White:")
+print("Testing 'Color_Count' Function, Color 'White':")
 print(color_count('white'))
+
+# 21.
+colors = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
+
+# function test with list item as argument
+print()
+print("Testing 'Color_Count' Function with List as Argument, Color 'Red':")
+print(color_count(colors[0]))
+print()
+
+# 22.
+thread_count = [color_count(color) for color in colors]
+
+for i in range(len(colors)):
+    print("There were {} {} threads sold today.".format(thread_count[i], colors[i]))
