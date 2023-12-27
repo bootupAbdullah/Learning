@@ -212,6 +212,3 @@ for items in sales_stripped:
 
 
 print(total_sales)
-
-
-
