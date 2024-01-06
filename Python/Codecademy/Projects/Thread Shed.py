@@ -173,11 +173,11 @@ for i in range(0, len(transactions_clean), 4):
 # ---- I reached a point where I needed assistance, so I involved Malik in the troubleshooting process. After explaining the code and the project's progress, Malik proposed using the Ctrl+F find function in the editor, instead of relying on the .find string method in Python. This approach led to the discovery that the element 'Tanya Co' — which was the ending point of the the 'for loop' in yeilding expected values ("names") — was originally 'Tanya Cox'. The initial use of .split(x) had split the string at 'x', inadvertently creating an unaccounted-for empty string in the process.
 
 
-# 11b
+# 11b.
 for i in range(1, len(transactions_clean), 4):
     sales.append(transactions_clean[i])
 
-# 11c
+# 11c.
 for i in range(2, len(transactions_clean), 4):
     thread_sold.append(transactions_clean[i])
 
@@ -192,23 +192,84 @@ print()
 print("LIST OF SALES AMOUNT:")
 print(sales)
 
-print()
-print()
-print("LIST OF TYPE OF THREAD SOLD:")
-print(thread_sold)
+# print()
+# print()
+# print("LIST OF TYPE OF THREAD SOLD:")
+# print(thread_sold)
 
-
-#13.
+# 13.
 total_sales = 0
 
-#14.
+# 14.
 
 sales_stripped = []
 
 for items in sales:
-  sales_stripped.append(items.strip("$"))
+    sales_stripped.append(items.strip("$"))
 for items in sales_stripped:
     total_sales += float(items)
 
 
 print(total_sales)
+
+# 15.
+print()
+print()
+print("TOTAL SALES:")
+print(total_sales)
+
+# 16.
+print()
+print()
+print("LIST OF TYPE OF THREAD SOLD:")
+print(thread_sold)  # located on line 154
+
+# 17.
+thread_sold_split = []
+
+# 18.
+for thread in thread_sold:
+    if "&" not in thread:
+        thread_sold_split.append(thread)
+    else:
+        if "&" in thread:
+            split_thread = thread.split("&")
+            for colors in split_thread:
+                thread_sold_split.append(colors)
+
+print()
+print()
+print("Thread Sold Split:")
+print(thread_sold_split)
+
+
+# 19.
+def color_count(color):
+    count = 0
+    for thread in thread_sold_split:
+        if color == thread:
+            count += 1
+    return count
+
+
+# 20.
+print()
+print()
+print("Testing 'Color_Count' Function, Color 'White':")
+print(color_count('white'))
+
+# 21.
+colors = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
+
+# function test with list item as argument
+print()
+print("Testing 'Color_Count' Function with List as Argument, Color 'Red':")
+print(color_count(colors[0]))
+print()
+
+# 22.
+thread_count = [color_count(color) for color in colors]
+
+for i in range(len(colors)):
+    print("There were {} {} threads sold today.".format(thread_count[i], colors[i]))
+
