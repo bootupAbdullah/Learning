@@ -31,7 +31,19 @@ print(brownie_points)
 player_to_words = {"player1":["blue", "tennis", "exit"], "wordNerd":["EARTH", "EYES", "MACHINE"],
 "Lexi Con":["ERASER", "BELLY", "HUSKY"], "Prof Reader":["zap", "coma", "period"]}
 
-#
+# 10.
+player_to_points = {}
+
+# 11.
+for players, words in player_to_words.items():
+player_points = 0
+for word in words:
+    player_points += score_word(word)
+    player_to_points[players] = player_points
+
+    '''this is pretty good, haven't tested the loop, the ".items()
+    was the key here :) '''
+
 
 
 
