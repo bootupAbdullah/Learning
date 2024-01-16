@@ -35,18 +35,34 @@ player_to_words = {"player1":["blue", "tennis", "exit"], "wordNerd":["EARTH", "E
 player_to_points = {}
 
 # 11.
-for player, words in player_to_words.items():
+for players, words in player_to_words.items():
     player_points = 0
     for word in words:
         player_points += score_word(word)
-        player_to_points[player] = player_points
+        player_to_points[players] = player_points
 
+print()
 print(player_to_points)
 
+# -- Extended Practice -- #
+
+# Add a word to the list of words a player has played:
+def play_word(player, word):
+    player_to_words[player].append(word)
+
+play_word("player1", "rain")
+
+print(player_to_words)
+
+# update point totals
+
+def update_point_totals():
+    for players, words in player_to_words.items():
+        player_points = 0
+        for word in words:
+            player_points += score_word(word)
+            player_to_points[players] = player_points
+    return print("current score: " + str(player_to_points))
 
 
-
-
-
-
-
+update_point_totals()
