@@ -39,7 +39,7 @@ print()
 # 9. This is list of players (first iteration) and a list of words each player has
 player_to_words = {"player1":["blue", "tennis", "exit"], "wordNerd":["EARTH", "EYES", "MACHINE"],
 "Lexi Con":["ERASER", "BELLY", "HUSKY"], "Prof Reader":["zap", "coma", "period"]}
-
+print(player_to_words)
 # 10.
 player_to_points = {}
 
