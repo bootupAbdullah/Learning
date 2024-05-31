@@ -46,9 +46,10 @@ class Pokemon:
     
     # method 4
   def speak(self):
-      random_number = random.randint(1, 3)
-      for phrases in self.speech:
-          print(random_number)
+    index = random.randint(0, 2)
+    print("The wild {} said \"{}\".".format(self.name, self.speech[index]))
+      
+    #print("I said \"Hello\"") 
   
 # create a pokemon
 wild_charmander = Pokemon("Charmander", "Fire", 5)
@@ -56,13 +57,9 @@ wild_charmander = Pokemon("Charmander", "Fire", 5)
 #test repr for pokemon
 print(wild_charmander)
 
-
-# create instance varaile
+# create instance varaible
 wild_charmander.speech = ["charmander!", "char!", "char, char!"]
 
-print(wild_charmander.speak)
+wild_charmander.speak()
 
 
-# #def random_number_method(self):
-#         random_number = random.randint(1, 100)  # Generate a random number between 1 and 100
-#         print(f"Random number: {random_number}")
