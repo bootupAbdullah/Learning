@@ -9,20 +9,25 @@ class Trainer:
         self.pokemon = []
 
     def saycatchphrase(self):
-        return print("Trainer {} says 'Gotta Catch 'Em All!'".format(self.name))
+        return print("Trainer {} says: 'Gotta Catch 'Em All!'".format(self.name))
+    
+    def throwpokeball(self):
+        print("Trainer {} threw the pokeball!".format(self.name))
+
     
     def __repr__(self):
         return "The is trainer {}, he is a {} and he is {} years old!".format(self.name, self.sex, self.age)
 
 
 # create a trainer
-trainer_1 = Trainer("Abdullah", "male", 36)
+abdullah = Trainer("Abdullah", "male", 36)
 
 # test repr for tariner
-print(trainer_1)
+print()
+print(abdullah)
 
 # test catch phrase method
-trainer_1.saycatchphrase()
+abdullah.saycatchphrase()
 
 # new class
 class Pokemon:
@@ -52,14 +57,33 @@ class Pokemon:
     #print("I said \"Hello\"") 
   
 # create a pokemon
-wild_charmander = Pokemon("Charmander", "Fire", 5)
+charmander = Pokemon("Charmander", "Fire", 5)
 
 #test repr for pokemon
-print(wild_charmander)
+print()
+print(charmander)
 
 # create instance varaible
-wild_charmander.speech = ["charmander!", "char!", "char, char!"]
+charmander.speech = ["charmander!", "char!", "char, char!"]
 
-wild_charmander.speak()
 
+charmander.speak()
+
+
+class Encounter:
+    def __init__(self, trainer, pokemon):
+        print("A wild {} appeared!".format(pokemon.name))
+        choice = input("Would you like to throw your Pokeball? (press 'Y' or 'N'): ")
+        
+        if choice.lower() == 'y':
+            print("You threw your Pokeball!")
+            
+        elif choice.lower() == 'n':
+            print("You chose not to throw your Pokeball.")
+            # Add logic for not throwing the Pokeball
+        else:
+            print("Invalid choice. Please press 'y' or 'n'.")
+
+print()
+encounter = Encounter(abdullah,charmander)
 
