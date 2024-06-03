@@ -1,7 +1,6 @@
 import random
 import time
 
-
 class Trainer:
 
     def __init__(self, input_name, input_sex, input_age = 0):
@@ -20,7 +19,7 @@ class Trainer:
         if type(pokemon) == Pokemon:
             self.pokemon.append(pokemon)
         else: 
-            passy
+            pass
 
 
     
@@ -96,7 +95,7 @@ class Encounter:
             print("You threw your Pokeball!")
             trainer.add_pokemon(pokemon)
             animate_pokeball()
-            print("You caught a {}".format(pokemon))
+            print("Congratulations, you caught a {}!y".format(pokemon.name))
             
             
         elif choice.lower() == 'n':
