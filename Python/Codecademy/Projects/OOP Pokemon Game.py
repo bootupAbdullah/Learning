@@ -1,4 +1,6 @@
 import random
+import time
+
 
 class Trainer:
 
@@ -13,6 +15,13 @@ class Trainer:
     
     def throwpokeball(self):
         print("Trainer {} threw the pokeball!".format(self.name))
+    
+    def add_pokemon(self, pokemon):
+        if type(pokemon) == Pokemon:
+            self.pokemon.append(pokemon)
+        else: 
+            passy
+
 
     
     def __repr__(self):
@@ -70,6 +79,14 @@ charmander.speech = ["charmander!", "char!", "char, char!"]
 charmander.speak()
 
 
+def animate_pokeball():
+    frames = ["(o)", " o ", "(o)", " o "]
+    for _ in range(10):
+        for frame in frames:
+            print(frame, end='\r')
+            time.sleep(0.2)
+
+
 class Encounter:
     def __init__(self, trainer, pokemon):
         print("A wild {} appeared!".format(pokemon.name))
@@ -77,6 +94,10 @@ class Encounter:
         
         if choice.lower() == 'y':
             print("You threw your Pokeball!")
+            trainer.add_pokemon(pokemon)
+            animate_pokeball()
+            print("You caught a {}".format(pokemon))
+            
             
         elif choice.lower() == 'n':
             print("You chose not to throw your Pokeball.")
