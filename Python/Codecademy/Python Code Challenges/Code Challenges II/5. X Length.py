@@ -14,13 +14,13 @@ length greater than or equal to the number provided. These are the steps:
 def x_length_words(sentence, number):
     split_sentence = sentence.split()
     for words in split_sentence:
-        if len(words) > number:
-            return False
+        if len(words) >= number:
+            return True
         else:
-            return True 
+            return False 
 
 # Uncomment these function calls to test your tip function:
-print(x_length_words("i like apples", 2))
+print(x_length_words("i like apples marathons", 2))
 # should print False
-#print(x_length_words("he likes apples", 2))
+print(x_length_words("he likes apples", 2))
 # should print True
