@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdullah Durrani</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background: url("https://images.pexels.com/photos/16106403/pexels-photo-16106403/free-photo-of-people-and-inflatable-boats-on-james-river-in-richmond-virginia-usa.jpeg") center/cover no-repeat black;
+            color: #fff7f3;
+            font-weight: bold;
+            font-family: georgia, sans-serif;
+        }
+        header {
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+   align-items: right;
+   margin-left: 800px; 
+}
+
+nav {
+    width: 90%;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+        .container {
+            display: flex;
+            width: 80%; /* Adjust width as needed */
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            padding: 80px;
+        }
+        .profile-image img {
+            width: 400px;
+            height: auto;
+            margin: 10px auto; /* Centers the image horizontally within the column */
+        }
+        p, .quote {
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+            color: white;
+            padding: 10px; /* Adds some space around the text */
+            margin-top: 20px; /* Reduced top margin for better vertical alignment */
+            font-size: 35px;
+        }
+        input[type="email"], input[type="submit"] {
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            background: red;
+            color: white;
+            cursor: pointer;
+        }
+        p2{
+            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+            align-items: center;
+            color: white;
+            padding: 10px; /* Adds some space around the text */
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="column">
+            <p>Hi! I'm Abdullah Durrani, an aspiring software engineer based in Richmond, VA.</p>
+        </div>
+        <div class="column">
+            <a class="profile-image" href="https://ibb.co/vH5JVv6">
+                <img src="https://i.ibb.co/cLCq2Gy/Profile-Picture-1.png" alt="Profile-Picture">
+            </a>
+        </div>
+        <div class="column">
+            <div class="quotation-left">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="quote">"Believe in people and they will be true to you; treat them greatly and they will show themselves great." — Ralph Waldo Emerson</p>
+        </div>
+    </div>
+</body>
+<main class="main">
+    <p2>Say Hello!</p2>
+    <div class ="contact">
+    <form action="#" method="POST">
+        <input type="email" placeholder="Your email">
+        <input type="submit" value="Send">
+    </form>
+    </div>
+</main>
+</html>
+
+
