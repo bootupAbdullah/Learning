@@ -7,7 +7,7 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -15,74 +15,70 @@
             background: url("https://images.pexels.com/photos/16106403/pexels-photo-16106403/free-photo-of-people-and-inflatable-boats-on-james-river-in-richmond-virginia-usa.jpeg") center/cover no-repeat black;
             color: #fff7f3;
             font-weight: bold;
-            font-family: georgia, sans-serif;
+            font-family: Georgia, sans-serif;
         }
         header {
-    width: 30%;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-   align-items: right;
-   margin-left: 800px; 
-}
-
-nav {
-    width: 90%;
-    margin: 0;
-    text-align: right;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: right;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
         .container {
             display: flex;
-            width: 80%; /* Adjust width as needed */
+            width: 80%;
             justify-content: space-between;
+            flex-grow:1;
         }
         .column {
             flex: 1;
-            padding: 80px;
+            padding: 20px;
         }
         .profile-image img {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             height: auto;
-            margin: 10px auto; /* Centers the image horizontally within the column */
         }
-        p, .quote {
-            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+        p {
+            background-color: rgba(0, 0, 0, 0.4);
             color: white;
-            padding: 10px; /* Adds some space around the text */
-            margin-top: 20px; /* Reduced top margin for better vertical alignment */
-            font-size: 35px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 20px;
         }
-        .contact{
-            margin-right:20px;
+        .quote, .hello {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+            width: 30%
         }
         input[type="email"], input[type="submit"] {
             border: none;
-            margin-right: 5px;
             padding: 10px;
             font-size: 18px;
-            margin-top: 30px;
+            margin-top: 10px;
         }
         input[type="submit"] {
             background: red;
@@ -90,12 +86,31 @@ nav ul li a:hover {
             cursor: pointer;
             font-weight: bold;
         }
-        p2{
-            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+        footer {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #333;
             color: white;
-            padding: 10px; /* Adds some space around the text */
-            font-size: 35px;
-            margin-right: 50PX;
+            text-align: center;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                padding-right: 0;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .container {
+                flex-direction: column;
+            }
+            header {
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -108,7 +123,8 @@ nav ul li a:hover {
             </ul>
         </nav>
     </header>
-    <div class="container">
+    <main>
+    <section class="container">
         <div class="column">
             <p>Hi! I'm Abdullah Durrani, an aspiring software engineer based in Richmond, VA.</p>
         </div>
@@ -118,22 +134,21 @@ nav ul li a:hover {
             </a>
         </div>
         <div class="column">
-            <div class="quotation-left">
-                <i class="fa-solid fa-quote-left"></i>
-            </div>
             <p class="quote">"Believe in people and they will be true to you; treat them greatly and they will show themselves great." — Ralph Waldo Emerson</p>
         </div>
-    </div>
+    </section>
+        <section>
+        <p class="hello">Say Hello!</p>
+        <div class="contact">
+            <form action="#" method="POST">
+                <input type="email" placeholder="Your email">
+                <input type="submit" value="Hello!">
+            </form>
+        </div>
+        </section>
+    </main>
+    <footer>
+        Made with ❤️ in RVA © Abdullah Durrani
+    </footer>
 </body>
-<main class="main">
-    <p2>Say Hello!</p2>
-    <div class ="contact">
-    <form action="#" method="POST">
-        <input type="email" placeholder="Your email">
-        <input type="submit" value="Hello!">
-    </form>
-    </div>
-</main>
 </html>
-
-

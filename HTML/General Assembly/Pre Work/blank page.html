@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <title>Abdullah Durrani</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("https://images.pexels.com/photos/16106403/pexels-photo-16106403/free-photo-of-people-and-inflatable-boats-on-james-river-in-richmond-virginia-usa.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: Georgia, sans-serif;
+    }
+    header {
+            display: flex;
+            justify-content: flex-end;
+        }
+    .nav-bar{
+            width: 30%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin-right: 25px;
+            text-align: right;
+    }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+        nav ul li {
+            margin-left: 20px;
+            display: block;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+        nav ul li a:hover {
+            background-color: red;
+        }
+    p {
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .center-container {
+
+    }
+    .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding-left: 150px;
+        }
+    .profile-image{
+            width: 30%;
+            margin: 80px;
+    }
+    .about, .quote {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+            width: 30%
+        }
+    .secondary-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .hello{
+        /* width:20%; */
+
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="center-container">
+    <section class="main-content">
+  <p class="about" id="about">Hi! I'm Abdullah Durrani, an aspiring software engineer based in Richmond, VA.</p>
+  <img class="profile-image" src="https://i.ibb.co/cLCq2Gy/Profile-Picture-1.png">
+  <p class="quote">"Believe in people and they will be true to you; treat them greatly and they will show themselves great." — Ralph Waldo Emerson</p>
+  </section>
+  <section class="secondary-content">
+    <div class="hello">
+        <p>Say Hello!</p>
+    </div>
+    <div class="client-interaction">
+        <input type="email" placeholder="Your email">
+        <input type="submit">
+    </div> 
+  </section>
+  </main>
+</body>
