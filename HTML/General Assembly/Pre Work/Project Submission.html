@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <title>Abdullah Durrani</title>
   <style>
@@ -10,39 +11,46 @@
       color: white;
       font-family: Georgia, sans-serif;
     }
+
     header {
-            display: flex;
-            justify-content: flex-end;
-        }
-    .nav-bar{
-            width: 30%;
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-            color: #fff;
-            padding: 10px;
-            margin-right: 25px;
-            text-align: right;
+      display: flex;
+      justify-content: flex-end;
     }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 20px;
-        }
-        nav ul li {
-            margin-left: 20px;
-            display: block;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 10px 15px;
-        }
-        nav ul li a:hover {
-            background-color: red;
-        }
+
+    .nav-bar {
+      width: 30%;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      color: #fff;
+      padding: 10px;
+      margin-right: 25px;
+      text-align: right;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+      display: block;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+
+    nav ul li a:hover {
+      background-color: red;
+    }
+
     p {
       font-size: 20px;
       background-color: rgba(0, 0, 0, 0.4);
@@ -50,38 +58,43 @@
       padding: 10px;
       margin-top: 20px;
     }
-    .center-container {
 
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .main-content {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            padding-left: 150px;
-        }
-    .profile-image{
-            width: 30%;
-            margin: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      padding-left: 190px;
     }
+
+    .profile-image {
+      width: 30%;
+      margin: 80px;
+    }
+
     .about, .quote {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            font-size: 20px;
-            width: 30%
-        }
-    .secondary-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 20px;
+      width: 30%
     }
-    .hello{
-        /* width:20%; */
+
+    .secondary-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      position: relative;
+      top: -150px;
 
     }
     input {
@@ -89,40 +102,62 @@
       padding: 10px;
       font-size: 18px;
     }
+
     input[type="submit"] {
       background: red;
       color: white;
     }
+
+    input[type="submit"]:hover {
+      cursor: pointer;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .footer-text {
+      padding: 3px;
+      margin: 0px;
+      font-family: "Apercu", sans-serif;
+      font-size: 0.875rem;
+    }
   </style>
 </head>
+
 <body>
-    <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="center-container">
+  <header>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="center-container">
     <section class="main-content">
-  <p class="about" id="about">Hi! I'm Abdullah Durrani, an aspiring software engineer based in Richmond, VA.</p>
-  <img class="profile-image" src="https://i.ibb.co/cLCq2Gy/Profile-Picture-1.png">
-  <p class="quote">"Believe in people and they will be true to you; treat them greatly and they will show themselves great." — Ralph Waldo Emerson</p>
-  </section>
-  <section class="secondary-content">
-    <div class="hello">
+      <p class="about" id="about">Hi! I'm Abdullah Durrani, an aspiring software engineer based in Richmond, VA.</p>
+      <img class="profile-image" src="https://i.ibb.co/cLCq2Gy/Profile-Picture-1.png">
+      <p class="quote">"Believe in people and they will be true to you; treat them greatly and they will show themselves
+        great." — Ralph Waldo Emerson</p>
+    </section>
+    <section class="secondary-content">
+      <div class="hello">
         <p>Say Hello!</p>
-    </div>
-    <div class="client-interaction">
-        <input type="email" placeholder="Your email">
-        <input type="submit">
-    </div> 
-  </section>
+      </div>
+      <div class="client-interaction">
+        <form action="#" method="post">
+        <input type="email" pattern=".*@*" placeholder="Your email" required>
+        <input type="submit"  value="Hello!">
+        </form>
+      </div>
+    </section>
   </main>
 </body>
 <footer>
   <footer>
-    Made with ❤️ in RVA © 2024 Abdullah Durrani
-</footer>
+    <p class="footer-text"> Made with ❤️ in RVA © 2024 Abdullah Durrani</p>
+  </footer>
 </footer>
