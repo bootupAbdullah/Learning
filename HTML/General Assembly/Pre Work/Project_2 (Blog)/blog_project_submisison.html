@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Playwrite+ES:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background: url('https://www.amle.org/wp-content/uploads/2021/02/784784p888EDNmain745iStock_68342469_XLARGE.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        body {
+            /*background: url("https://i.ibb.co/MZ5gLFZ/cf1b349a-85e4-48ad-8d3c-fab63d18fcbf.webp");*/
+            background: url("https://unblast.com/wp-content/uploads/2020/05/Light-Wood-Background-Texture.jpg");
+            background-size: cover;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: "Playwrite ES", cursive;
+            font-weight: ;
+            font-style: normal;
+            color: red;
+        }
+
+        .notification {
+            color: black;
+            font-family: "Fontdiner Swanky", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h2 {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        h2,
+        h3,
+        p {
+            font-family: "Playfair Display", serif;
+            font-style: normal;
+        }
+
+        h3 {
+            margin-top: -15px;
+            font-size: 12px;
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 12px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .header-image {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid rgba(250, 250, 0, 1);
+            border-radius: 20px;
+        }
+
+        ul {
+            padding: 10px;
+            background: rgba(250, 250, 0, 0.4);
+        }
+
+        li {
+            font-family: "Fontdiner Swanky", serif;
+            font-style: normal;
+            display: inline;
+            font-size: 18px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        .book-thumbnail {
+            margin-top: -5px;
+            max-width: 100px;
+            border-radius: 0px;
+            border: 6px solid yellow;
+            position: relative;
+        }
+
+        .footer-text {
+            display: block;
+            text-align: right;
+            padding: 3px;
+            margin: 0px;
+            font-family: "Rajdhani", sans-serif;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="header-image"
+            src="https://i.ibb.co/Lvn380b/DALL-E-2024-07-15-21-11-10-A-comedic-scene-featuring-a-person-smoking-a-pipe-looking-over-their-glas.webp">
+        <h1>Read Along!</h1>
+        <ul>
+            <li><a href="#">Me, Me, Me!</a></li>
+            <li><a href="#">Favorite Books!</a></li>
+            <li><a href="#">Eh, not so much...</a></li>
+        </ul>
+    </header>
+    <article>
+        <h1 class="notification">Currently reading:</h1>
+        <img class="book-thumbnail" src="https://m.media-amazon.com/images/I/71VpvU7u0aL._AC_UF1000,1000_QL80_.jpg"
+            alt="Book Cover">
+        <h2>Zen and the Art of Motorcycle Maintenance</h2>
+        <h3>Book By Robert M. Pirsig</h3>
+        <p>This intriguing book blends a philosophical journey with a literal motorcycle road trip. So far, the
+            narrative has introduced us to the narrator and his son, Chris, as they travel across the Midwest. The story
+            delves into discussions on maintaining a motorcycle as a metaphor for navigating the complexities of life.
+            The author reflects on "quality" and our understanding of underlying technology and values. It’s a profound
+            exploration of how we connect with technology and the world around us, with deeper philosophical insights
+            gradually unfolding.</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <img class="book-thumbnail" src="https://m.media-amazon.com/images/I/613f9ioQnjL._AC_UF1000,1000_QL80_.jpg">
+        <h2>Batman: A Death in The Family</h2>
+        <p>This has been an incredible read so far! It's full of twists and turns; I've found myself exclaiming "no!"
+            and gasping multiple times, which is rare for me as I usually pick up on plot points easily. Featuring some
+            of the best writers and artists from the '80s and '90s, this classic truly delivers. Additionally, this
+            version of the trade paperback includes several follow-up issues depicting Batman's grieving and recovery
+            after the loss of his ward. </p>
+        <button>Like</button>
+    </article>
+
+    </article>
+    <script>
+        $("button").on("click", function () {
+            alert("Clicked!");
+        });
+    </script>
+</body>
+<footer>
+    <p class="footer-text"> Made with ❤️ in RVA © 2024 Abdullah Durrani</p>
+</footer>
+</footer>
