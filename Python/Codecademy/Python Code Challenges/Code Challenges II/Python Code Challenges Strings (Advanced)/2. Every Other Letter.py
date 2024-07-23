@@ -19,12 +19,9 @@ return a string containing every other letter in word.
 # Write your every_other_letter function here:
 
 def every_other_letter(word):
-    new_word = word.split()
-    new_string = " "
-    for letters in range(0, len(new_word), 2):
-        new_word.append(new_string)
-    print(new_string)
-
+empty_string = ""
+for letters in word:
+    
 # Uncomment these function calls to test your function:
 print(every_other_letter("Codecademy"))
 # should print Cdcdm
