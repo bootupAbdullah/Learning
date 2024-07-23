@@ -23,7 +23,7 @@ def every_other_letter(word):
     new_string = " "
     for letters in range(0, len(new_word), 2):
         new_word.append(new_string)
-    return new_string
+    print(new_string)
 
 # Uncomment these function calls to test your function:
 print(every_other_letter("Codecademy"))
@@ -32,5 +32,3 @@ print(every_other_letter("Codecademy"))
 # should print Hlowrd
 #print(every_other_letter(""))
 # should print 
-
-
