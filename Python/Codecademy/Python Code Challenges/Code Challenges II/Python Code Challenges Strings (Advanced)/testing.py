@@ -21,5 +21,6 @@ print(new_word[-1:0]) #! new print out
 print(new_word[0]) #! that works, print out is "H" as expected. Now, we're getting some where.
 print(new_word[-1]) #! that works too, prints out "o"
 print(new_word[-1:]) #! again, prints out "o"
-print(new_word[:-1]) 
+print(new_word[:-1]) #! everything but the last letter, so you get "Hell" ** I am not quite there yet (LOL)
+
 
