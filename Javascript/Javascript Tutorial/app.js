@@ -33,3 +33,12 @@ alert( `hello ${1}` );
 alert( `hello ${"user"}`);
 
 alert( `hello ${user}` );
+
+// 2.6 Iteraction: alert, prompt, confirm 
+
+let answer = prompt('Are you a bunny rabbit?', 'Yes');
+alert (`It looks like your answered \'${answer}\' to the question: \'Are you a bunny rabbit?\'`);
+
+let age = prompt('How old are you?', 100);
+
+alert(`You are ${age} years old!`); // You are 100 years old!
