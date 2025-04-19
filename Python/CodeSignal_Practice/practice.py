@@ -3,7 +3,7 @@
 a = [1,2,3,4,5]
 
 # define a function to take in arrays and apply desired functionality
-def take_this_array(array):
+def make_the_b_array(array):
     
     # we will need an empty list
     b = []
@@ -23,6 +23,7 @@ def take_this_array(array):
     first_sum_for_b_array = array[i - 1] + array[i] + array[i + 1]
     b.append(first_sum_for_b_array)
     #TODO: try to figure out when the left or right should be 0
+
     
     # we will need to a return a list that contains ints made up from the specific math required
     #for list 'b'.  
